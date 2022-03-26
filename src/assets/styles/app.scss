@@ -1,0 +1,164 @@
+@import './fonts.scss';
+
+body{
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .calc__wrap{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        height: 500px;
+        margin-top: 50px;
+
+        .calc__body{
+            align-items: center;
+            background: silver;
+            border-radius: 3px;
+            border: 1px solid black;
+            display: flex;
+            height: 100%;
+            justify-content: space-around;
+            width: 800px;
+            flex-direction: column;
+
+            #calc__display{
+                width: 80%;
+                height: 50px;
+                background: rgb(197, 192, 192);
+                border: 1px solid black;
+                border-radius: 3px;
+                text-align: center;
+                font: {
+                    family: 'Accuratist';
+                    size: 30px;
+                    weight: bold;
+                    style: italic;
+                }
+            }
+
+            #calc__memory__display__wrap{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                width: 50%;
+                height: 100px;
+                font: {
+                    family: 'Accuratist';
+                    size: 30px;
+                    weight: bold;
+                    style: italic;
+                }
+
+                p{
+                    text-transform: uppercase;
+                    margin: 0;
+                    font: {
+                        family: 'Accuratist';
+                        size: 25px;
+                        weight: bold;
+                        style: italic;
+                    }
+                }
+
+                #calc__memory__display{
+                    width: 70%;
+                    height: 50px;
+                    background: rgb(197, 192, 192);
+                    border: 1px solid black;
+                    border-radius: 3px;
+                    text-align: center;
+                    font: {
+                        family: 'Accuratist';
+                        size: 30px;
+                        weight: bold;
+                        style: italic;
+                    }
+                }
+            }
+
+            .calc__keyboard{
+                width: 90%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .calc__keyboard__block{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    width: 25%;
+                    height: auto;
+
+                    button{
+                        border: 1px solid rgb(73, 67, 67);
+                        border-radius: 5px;
+                        width: 45px;
+                        height: 45px;
+                        margin: 5px;
+                        font: {
+                            family: 'Accuratist';
+                            size: 20px;
+                            weight: bold;
+                        }
+                    }
+
+                    .button__number{
+                        background: rgb(211, 211, 250);
+                    }
+
+                    #button__number__zero{
+                        background: rgb(211, 211, 250);
+                    }
+
+                    #button__number__doubleZero{
+                        background: rgb(211, 211, 250);
+                    }
+
+                    .button__oper{
+                        background: rgb(245, 204, 204);
+                    }
+
+                    .button__func{
+                        background: rgb(217, 247, 217);
+                    }
+
+                    #clear, #result{
+                        background: rgb(215, 191, 247);
+                    }
+                }
+
+                .calc__radio__block{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    width: 40px;
+                    height: 200px;
+
+                    .calc__radio__item{
+                        border: 1px solid black;
+                        border-radius: 5px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        align-items: center;
+                        font: {
+                            family: 'Accuratist';
+                            size: 20px;
+                            weight: bold;
+                        }
+
+                        input{
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
